@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teste</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif
+    }
+    .depois{
+      display:none;
+    }
+    div:hover > .teste{
+      color: pink
+    }
+    div:hover > .depois{
+     display: block;
+     background-color: aqua;
+     color: black;
+    
+}
+.teste::before{
+  content: '★';
+}
+.teste::after{
+  content: '★';
+}
+    
+  </style>
+</head>
+<body>
+  <h1>Teste Aprendizado</h1>
+  <div>
+    <p class="teste">Isso é um texte para ver se aprendi</p>
+    <p class="depois">Aparece quando passar o mouse em cima</p>
+  </div>
+
+</body>
+</html>

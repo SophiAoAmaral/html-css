@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body{
+  background-color: rgba(192, 119, 176, 0.459);
+}
+h1{
+  color: rgb(92, 9, 74);
+}
+h1#principal{
+  text-align: center;
+}
+h2{
+  color: rgb(134, 13, 108);;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.basico{
+  color: green;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.intermediario{
+  color: yellow;
+}
+.avancado{
+  color: red;
+}

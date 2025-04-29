@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    div:hover > .principal{
+      color: pink;
+    }
+    .depois{
+      display: none;
+    }
+    div:hover > .depois{
+      display: block;
+      background-color: antiquewhite;
+      color: crimson;
+    }
+    .principal::after{
+      content:'✿' ;
+    }
+    .depois::before{
+      content: '✿';
+    }
+    li:hover{
+      color: blue;
+    }
+    .lista2{
+      display: none;
+    }
+      li::after{
+        content:'✿' ;
+      }
+
+  </style>
+</head>
+<body>
+  <h1>Teste 2</h1>
+  <div>
+    <p class="principal">Quando eu passar o mouse muda de cor e aparece um paragrafo em baixo</p>
+    <p class="depois">Aparece apos eu passar o mouse no outro paragrafo</p>
+  </div>
+  <ul>
+    <li>Cor fundo azul</li>
+    
+  </ul>
+</body>
+</html>
