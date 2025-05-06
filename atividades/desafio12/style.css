@@ -19,6 +19,7 @@ html, body{
   min-height: 100vh;
   background-color: darkgray;
   font-family: var(--font1);
+  
 }
 header{
   background-color: black;
@@ -48,24 +49,41 @@ section{
   padding-bottom: 10vh;
   line-height: 2em;
   padding-left: 30px;
-  font-family: var(--font3)
+  font-family: var(--font3);
+  font-size: 30px;
+}
+section > p{
+  padding-bottom:2em ;
 }
 .normal{
   background-color: white;
   color: black;
-
+ 
 }
 .imagem{
   background-color: pink;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.493);
+  background-attachment: fixed;
+  background-size: cover;
+  
 
 }
 .imagem > p {
   width: 400px;
-  background-color: rgb(138, 131, 131);
+  background-color: rgba(49, 49, 49, 0.445);
+  color: white;
+  text-shadow: 1px 1px 0px black;
+  display: inline-block;
 }
 
+#img1{
+  background-image: url(imagens/background001.jpg);
+  background-position: right center;
 
-
+}
+#img2{
+  background-image: url(imagens/background002.jpg);
+}
 
 
 
