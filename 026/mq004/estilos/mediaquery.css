@@ -1,5 +1,111 @@
 /*Todas as MIDIAS*/
 
-@media print{
-    
+/*TYPICAL DEVICE BREAKPROINTS
+
+PQUENAS TELAS: ATE 480PX
+CELULAR: 480PX ATE 767PX
+TABLET: 768PX ATE 1023PX
+DESKTOP: 1024PX ATEE 1439PX
+GRANDES TELAS: ATE 1440PX
+
+*/
+@media print{/*IMPRESSORAS*/
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+body{
+        background-image: url(../imagens/back-print.jpg); /*NAO FUNCIONA*/
+       
+    }
+
+main{
+    border: 2px solid black;
+}
+main h1{
+        
+        text-shadow: none;
+        color: black;
+}
+
+#phone{
+    display: none;
+}
+#tablet{
+    display: none;
+}
+#print{
+    display: block;
+}
+#pc{
+    display: none;
+}
+#tv{
+    display: none;
+}
+}
+@media screen and (min-width:768px) and (max-width: 1023px){/*TABLET*/
+ body{
+    background-image: url(../imagens/back-tablet.jpg);
+ }
+#phone{
+    display: none;
+}
+#tablet{
+    display: block;
+}
+#print{
+    display: none;
+}
+#pc{
+    display: none;
+}
+#tv{
+    display: none;
+}
+
+}
+@media screen and (min-width:1024px) and (max-width:1439px ){/*DESKTOP*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone{
+    display: none;
+}
+#tablet{
+    display: none;
+}
+#print{
+    display: none;
+}
+#pc{
+    display: block;
+}
+#tv{
+    display: none;
+}
+
+}
+@media screen and (min-width: 1200px){/*grandes telas*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        width: 700px;
+    }
+#phone{
+    display: none;
+}
+#tablet{
+    display: none;
+}
+#print{
+    display: none;
+}
+#pc{
+    display: none;
+}
+#tv{
+    display: block;
+}
+
 }
