@@ -1,0 +1,26 @@
+    /*TYPICAL DEVICE BREAKPROINTS
+
+PQUENAS TELAS: ATE 480PX
+CELULAR: 480PX ATE 767PX
+TABLET: 768PX ATE 1023PX
+DESKTOP: 1024PX ATEE 1439PX
+GRANDES TELAS: ATE 1440PX
+
+*/
+
+
+
+@media screen and (min-width: 768px){
+    #burguer{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    menu >ul > li{
+        display: inline-block;
+    }
+    main{
+        width: 768px;
+    }
+}
