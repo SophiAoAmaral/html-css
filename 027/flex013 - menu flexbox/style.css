@@ -1,3 +1,8 @@
+:root{
+    --fontTitulo :  "Jost", sans-serif;
+}
+
+
 *{
     margin:0;
     padding: 0;
@@ -24,17 +29,23 @@ header{
 }
 
 h1{
-    border: 1px dotted black;
+    font-family: var(--fontTitulo);
     flex: 0 0 200px;
 
 }
 
 nav{
-    border: 1px dotted black;
+    
 
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
+}
+#menu{
+    
+    background-repeat: no-repeat;
+    padding: 12px;
+    display: none;
 }
 a{
     background-color: black;
@@ -44,6 +55,7 @@ a{
     text-decoration: none;
     text-align: center;
     border-radius: 5px;
+    display: flex;
 }
 a:hover{
     background-color: white;

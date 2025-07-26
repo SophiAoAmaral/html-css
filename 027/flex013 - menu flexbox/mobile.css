@@ -1,0 +1,35 @@
+header, header >nav {
+    flex-flow: column nowrap;
+}
+
+h1{
+    flex-basis: 50px;
+}
+
+a{
+    width: 90vw;
+    
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 90vw;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#o1{
+    display: none;
+}
+#o2{display: none;}
+#o3{display: none;}
+#o4{display: none;}
+#o5{display: none;}
+#o6{display: none;}
+
+
