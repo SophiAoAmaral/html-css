@@ -10,15 +10,20 @@ body{
 
 
 }
+h1, h2{
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    text-align: center;
+}
 header{
     padding: 20px;
 }
 
-p, h1 , h2{
-    margin-bottom: 10px;
+p{
     text-align: justify;
+    padding: 10px;
+    font-size: 20px;
 }
-
 .normal{
     padding: 20px;
 }
@@ -26,4 +31,41 @@ p, h1 , h2{
 .flex-content{
     background-color: lightgray;
     padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+
+
+}
+
+
+.text-midia{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;/*Cola o priemiro na esquerda e o ultimo no final*/
+}
+.midia-text{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+.text{
+    flex: 1 1 500px; /* flex-grow: 1 → Permite que o item cresça, flex-shrink: 1 → Permite que o item encolha caso não haja espaço suficiente no container, flex-basis: 500px → Define o tamanho inicial preferido do item  */
+    
+}
+.media{
+    flex: 1 0 400px;
+   
+}
+.media > img{
+    display: block;
+    margin:auto;
+    width: 400px;
+    padding: 10px;
+}
+.media >iframe{
+    display: block;
+    margin: auto;
+    
+
+    width: 90%;
 }
