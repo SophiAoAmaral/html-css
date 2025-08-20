@@ -75,3 +75,49 @@
     grid-column-start: 5;
     grid-column-end: 7;
 }
+.container3{
+    display: grid;
+    grid-template-rows: repeat(6,80px);
+    grid-template-columns: repeat(7,1fr);
+    margin: 20px;
+}
+
+.b1{
+    background-color: thistle;
+    grid-row-start:1 ;
+    grid-row-end: 3;
+    grid-column-start:1 ;
+    grid-column-end: 5;
+}
+
+.b2{
+    background-color: yellow;
+    grid-row-start:1 ;
+    grid-row-end:6 ;
+    grid-column-start:5 ;
+    grid-column-end:7 ;
+}
+
+.b3{
+    background-color: turquoise;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.b4{
+    background-color: tomato;
+    grid-row-start:4 ;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.b5{
+    background-color: violet;
+    grid-row-start: 3;
+    grid-row-end:4 ;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
